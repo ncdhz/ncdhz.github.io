@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      
+    LaTex 基础知识 - NCDHZ
+    
+    </title>
+    
+
+    
+    
+    <link href="atom.xml" rel="alternate" title="NCDHZ" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/style.min.css">
+    <link rel="stylesheet" href="asset/css/doc.css">
+    <script src="asset/app.js"></script>
+</head>
+  <body>
+    <section class="hero">
+      <div class="hero-head">
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+              <div class="container">
+              <div class="navbar-brand">
+                
+                <a target="_self" class="navbar-item " href="https://www.majunlong.top">个人网站</a>
+                
+                <a target="_self" class="navbar-item " href="index.html">Home</a>
+                
+                <a target="_self" class="navbar-item " href="archives.html">Archives</a>
+                
+
+                <a role="button" id="navbarSNSRssSwitchBtn" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarSNSRssButtons">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+              </div>
+            
+              <div id="navbarSNSRssButtons" class="navbar-menu">
+                <div class="navbar-start">
+                  
+                </div>
+            
+                <div class="navbar-end">
+                  <div class="navbar-item">
+                    <!--buttons start-->
+                    <div class="buttons">
+                      
+                        
+                        
+                        
+                        <a href="https://github.com/ncdhz" target="_blank" title="github">
+                            <span class="icon is-large has-text-grey-darker">
+                               <svg class="svg-inline--fa fa-github fa-w-16 fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github fa-lg"></i> -->
+                            </span>
+                          </a>
+                        
+                        
+                      
+                      <a href="atom.xml" target="_blank" title="RSS">
+                          <span class="icon is-large has-text-black-bis">
+                              <svg class="svg-inline--fa fa-rss fa-w-14 fa-lg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rss" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path></svg><!-- <i class="fas fa-rss fa-lg"></i> -->
+                          </span>
+                      </a>
+                    </div>
+                    <!--buttons end-->
+
+                  </div>
+                </div>
+                </div>
+              </div>
+            </nav>
+      </div>
+
+ <div class="hero-body ct-body"></div>
+      
+    </section>
+    <section class="ct-body">
+      <div class="container">
+          <div class="columns is-variable bd-klmn-columns is-4 is-centered">
+              <div class="column is-four-fifths">
+                  <div class="post-body single-content">
+                    
+                    <h1 class="title">
+                            LaTex 基础知识   
+                      </h1>
+                     
+                    
+                      <div class="media">
+                            
+                            <figure class="media-left">
+                              <p class="image is-48x48">
+                                
+                                  <img class="is-rounded" src="">
+                                
+                              </p>
+                            </figure>
+                            
+                            <div class="media-content">
+                              <div class="content">
+                                <p>
+                                 <span class="date">2020/10/17</span>
+                                  <span class="tran-posted-in">posted in</span>&nbsp; 
+                                  
+                                      <span class="posted-in"><a href='%E7%BC%96%E8%BE%91%E5%99%A8.html'>编辑器</a></span>
+                                         
+                                  
+
+                                   
+                                      
+                                  <br />
+                                  <span class="tran-tags">Tags:</span>&nbsp;
+                                  
+                                    <a class="tag is-link is-light" href='tag_%E7%BC%96%E8%BE%91%E5%99%A8.html'>#编辑器</a>
+                                     
+
+                                </p>
+                              </div>
+                            </div>
+                         
+                    </div>
+                </div>
+                  <article class="markdown-body single-content">
+                    <ol>
+<li><p>导入文档类型</p>
+<pre><code class="language-text">% 导入文档的命令
+\documentclass{文档类型}<br/>
+% 可以根据自己的需求导入合适的文档<br/>
+\documentclass{article} % 论文<br/>
+\documentclass{book} % 书籍<br/>
+\documentclass{report} % 报告<br/>
+\documentclass{letter} % 信<br/>
+%注意：一个 tex 文件只能有一个文档类型
+</code></pre></li>
+<li><p>支持中文包</p>
+<pre><code class="language-text">% 首先文档格式应该调整为 uft8
+% 构建命令应为 xelatex<br/>
+% 添加下面的命令<br/>
+\usepackage{ctex}
+</code></pre>
+<ul>
+<li>打开 <code>ctex</code> 的文档</li>
+</ul>
+<pre><code class="language-text">// 在命令行中输入以下命令
+texdoc ctex 
+</code></pre></li>
+<li><p>文档简介命令</p>
+<pre><code class="language-text">\title{标题}
+\author{作者}<br/>
+\date{\today} % 时间 其中 \today 表示是今天
+</code></pre></li>
+<li><p>正文区</p>
+<pre><code class="language-text">% 有且只能有一个正文区
+\begin{document}<br/>
+    % 下面命令表示文档中添加上面简介信息 （不是每一个文档类都支持此命令）<br/>
+    \maketitle<br/>
+\end{document}
+</code></pre></li>
+<li><p>字体设置</p>
+<ul>
+<li><p><code>LaTex</code> 中字体属性</p>
+<ul>
+<li><p>字体编码</p>
+<ul>
+<li><p>正文字体编码</p>
+<pre><code class="language-text">OT1
+T1<br/>
+EU1
+</code></pre></li>
+<li><p>数学字体编码</p>
+<pre><code class="language-text">OML
+OMS<br/>
+OMX
+</code></pre></li>
+</ul></li>
+<li><p>字体族</p>
+<ul>
+<li><p>罗马字体</p>
+<pre><code class="language-text">% 设置{}里面字体为罗马字体
+\textrm{内容}<br/>
+% 声明后续字体为罗马字体<br/>
+\rmfamily 内容<br/>
+% 注意可以用 {} 包裹表示只影响这个范围内的字体<br/>
+{\rmfamily 内容}
+</code></pre></li>
+<li><p>无衬线字体</p>
+<pre><code class="language-text">% 道理同上
+\textsf{内容}<br/>
+{\sffamily 内容}
+</code></pre></li>
+<li><p>打字机字体</p>
+<pre><code class="language-text">% 道理同上
+\texttt{内容}<br/>
+{\ttfamily 内容}
+</code></pre></li>
+</ul></li>
+<li><p>字体系列</p>
+<ul>
+<li><p>粗细、宽度</p>
+<pre><code class="language-text">\textmd{内容}
+\textbf{内容}<br/>
+{\mdseries 内容}<br/>
+{\bfseries 内容}
+</code></pre></li>
+</ul></li>
+<li><p>字体形状</p>
+<ul>
+<li><p>直立</p>
+<pre><code class="language-text">\textup{内容}
+{\upshape 内容}
+</code></pre></li>
+<li><p>斜体</p>
+<pre><code class="language-text">\textit{内容}
+{\itshape 内容}
+</code></pre></li>
+<li><p>伪斜体</p>
+<pre><code class="language-text">\textsl{内容}
+{\slshape 内容}
+</code></pre></li>
+<li><p>小型大写</p>
+<pre><code class="language-text">\textsc{内容}
+{\scshape 内容}
+</code></pre></li>
+<li><p>中文字体</p>
+<pre><code class="language-text">% 注意：需要使用 ctex 宏包
+{\songti 宋体} <br/>
+{\heiti 黑体}<br/>
+{\fangsong 仿宋}<br/>
+{\kaishu 楷书}
+</code></pre></li>
+</ul></li>
+<li><p>字体大小</p>
+<pre><code class="language-text">% 字体大小是相较于`documentclass`中默认字体大小来定义的（可以通过下面的方式更改默认字体大小）
+% 设置默认字体为10磅<br/>
+\documentclass[10pt]{}<br/>
+% 设置默认字体为11磅<br/>
+\documentclass[11pt]{}<br/>
+% 设置默认字体为12磅<br/>
+\documentclass[12pt]{}<br/>
+% 注意没有 13pt 14pt 等<br/>
+% 对应下面字体<br/>
+{\tiny Hello} \\<br/>
+{\scriptsize Hello} \\<br/>
+{\footnotesize Hello} \\<br/>
+{\small Hello} \\<br/>
+{\normalsize Hello} \\<br/>
+{\large Hello} \\ <br/>
+{\Large Hello} \\<br/>
+{\huge Hello} \\ <br/>
+{\Huge Hello} \\
+</code></pre>
+<p><img src="media/16029107741366/16029151909028.jpg" alt=""/></p>
+<pre><code class="language-text">% ctex 中还定义了一个字号大小命令
+\zihao{0} 你好！ \\<br/>
+\zihao{1} 你好！ \\ <br/>
+\zihao{5} 你好！ \\
+</code></pre>
+<p><img src="media/16029107741366/16029156532745.jpg" alt=""/></p></li>
+</ul></li>
+</ul></li>
+<li><p>构建提纲</p>
+<pre><code class="language-text">\begin{document}
+    % 小节<br/>
+    \section{引言}<br/>
+    \section{实验方法}<br/>
+    \section{实验结果}<br/>
+    % 子小节<br/>
+    \subsection{数据}<br/>
+    \subsection{图表}<br/>
+    % 子子小节<br/>
+    \subsubsection{实验条件}<br/>
+    \subsubsection{实验过程}<br/>
+    \section{结论}<br/>
+    \section{致谢}<br/>
+\end{document}
+</code></pre>
+<p><img src="media/16029107741366/16029162442708.jpg" alt=""/></p>
+<ul>
+<li><p>产生目录</p>
+<pre><code class="language-text">% 产生目录
+\tableofcontents<br/>
+% 大纲<br/>
+\section{引言}<br/>
+\section{实验方法}<br/>
+\section{实验结果}<br/>
+\subsection{数据}<br/>
+\subsection{图表}<br/>
+\subsubsection{实验条件}<br/>
+\subsubsection{实验过程}<br/>
+\section{结论}<br/>
+\section{致谢}
+</code></pre>
+<p><img src="media/16029107741366/16029165969061.jpg" alt=""/></p></li>
+</ul></li>
+<li><p>特殊字符处理</p>
+<ul>
+<li><p>空白字符</p>
+<pre><code class="language-text">% 空行分段，多空格等于一个空格
+% 自动缩进，决不能使用空格代替<br/>
+% 英文中多个空格处理为一个空格，中文会被忽略<br/>
+% 汉字与其它字符的间距会制动由XeLaTeX处理<br/>
+% 禁止使用中文全角空格
+</code></pre>
+<pre><code class="language-text">% 1em (当前字体中m的宽度)    
+a\quad b<br/>
+% 2em <br/>
+a\qquad b<br/>
+% 约1/6个em<br/>
+a\,b a\thinspace b<br/>
+% 0.5个em<br/>
+a\enspace b<br/>
+% 空格<br/>
+a\ b<br/>
+% 硬空格<br/>
+a~b<br/>
+% 1pc=12pt=4.218mm<br/>
+a\kern 1pc b<br/>
+a\kern -1em b<br/>
+a\hskip 1em b<br/>
+a\hspace{35pt} b<br/>
+% 占位宽度<br/>
+a\hphantom{xyz} b<br/>
+% 弹性长度<br/>
+a\hfill b
+</code></pre>
+<p><img src="media/16029107741366/16029173409869.jpg" alt=""/></p></li>
+<li><p>控制符</p>
+<pre><code class="language-text">% 下面字符在latex 中有特殊定义所以需要转译
+    \# \$ \% \{ \} \~{} \_{} \^{} \textbackslash \&amp;
+</code></pre>
+<p><img src="media/16029107741366/16029176157197.jpg" alt=""/></p></li>
+<li><p>排版符号</p>
+<pre><code class="language-text">\S \P \dag \ddag \copyright \pounds
+</code></pre>
+<p><img src="media/16029107741366/16029176835068.jpg" alt=""/></p></li>
+<li><p>标志符号</p>
+<pre><code class="language-text">\Tex{} \LaTeX{} \LaTeXe{}
+</code></pre>
+<p><img src="media/16029107741366/16029177708478.jpg" alt=""/></p>
+<pre><code class="language-text">\documentclass[10pt]{article}
+\usepackage{ctex}<br/>
+\usepackage{xltxtra}<br/>
+\usepackage{texnames}<br/>
+\usepackage{mflogo}<br/>
+\begin{document}<br/>
+    % xltxtra 宏包提供<br/>
+    \XeLaTeX<br/>
+    % texnames 宏包提供<br/>
+    \AmSTeX{} \AmS-\LaTeX{}<br/>
+    \BibTeX{} \LuaTeX<br/>
+    % mflogo 宏包提供<br/>
+    \METAFONT{} \MF{} \MP{}<br/>
+\end{document}
+</code></pre>
+<p><img src="media/16029107741366/16029180847218.jpg" alt=""/></p></li>
+<li><p>引号</p>
+<pre><code class="language-text">% 和常规的单双引号不同 （撇号 和 单引号）
+`您好&#39; <br/>
+``您好&#39;&#39;
+</code></pre>
+<p><img src="media/16029107741366/16029181960066.jpg" alt=""/></p></li>
+<li><p>连字符</p>
+<pre><code class="language-text">% - -- ---
+</code></pre>
+<p><img src="media/16029107741366/16029183470959.jpg" alt=""/></p></li>
+<li><p>非英文字符</p>
+<pre><code class="language-text">\oe \OE \ae \AE \AA \o \O \l \L \ss \SS !`?&#39;
+</code></pre>
+<p><img src="media/16029107741366/16029188104115.jpg" alt=""/></p></li>
+<li><p>重音符号</p>
+<pre><code class="language-text">\`o \&#39;o \^o \~o \=o \u{o} \v{o} \H{o} \r{o} \t{o} \b{o} \c{o} \d{o}
+</code></pre>
+<p><img src="media/16029107741366/16029189918108.jpg" alt=""/></p></li>
+</ul></li>
+<li><p>插图</p>
+<ul>
+<li>导入插入宏包 <code>\usepackage{graphicx}</code></li>
+<li><p>使用语法</p>
+<pre><code class="language-text">\includegraphics[&lt;选项&gt;]{文件名}
+</code></pre></li>
+<li><p>支持格式：<code>EPS,PDF,PNG,JPNG,BMP</code></p></li>
+<li><p>指定搜索路径</p>
+<pre><code class="language-text">\graphicspath{{image/}} % 表示当前文件夹中 image 文件夹下 
+</code></pre></li>
+<li><p>参数讲解</p>
+<pre><code class="language-text"> % 缩放比
+\includegraphics[scale=0.3]{}<br/>
+% 指定高度<br/>
+\includegraphics[height=15cm]{}<br/>
+% 指定宽度<br/>
+\includegraphics[width=2cm]{}<br/>
+% 版型文本高度的0.1<br/>
+\includegraphics[height=0.1\textheight]{}<br/>
+% 版型文本宽度的0.1<br/>
+\includegraphics[width=0.1\textwidth]{}<br/>
+% 旋转角度<br/>
+\includegraphics[angle=45]{}<br/>
+% 多参数<br/>
+\includegraphics[angle=45, width=2cm]{}
+</code></pre>
+<ul>
+<li><code>graphicx</code> 帮助文档 <code>texdoc graphicx</code></li>
+</ul></li>
+</ul></li>
+<li><p>表格</p>
+<ul>
+<li><p>基本表格</p>
+<pre><code class="language-text">% l 表示居左 c 表示居中 r 表示居右 （l c c c r (表示有五列分别是 居左 居中 居中 居中 居右)）
+\begin{tabular}{l c c c r}<br/>
+    姓名 &amp; 语文 &amp; 数学 &amp; 外语 &amp; 备注 \\<br/>
+    李四 &amp; 87 &amp; 100 &amp; 93 &amp; 优秀 \\<br/>
+    张三 &amp; 87 &amp; 100 &amp; 33 &amp; 补考 \\<br/>
+    网二 &amp; 66 &amp; 70 &amp; 63 &amp; 一般 \\<br/>
+\end{tabular}
+</code></pre>
+<p><img src="media/16029107741366/16029206218682.jpg" alt=""/></p></li>
+<li><p>带竖线的表格</p>
+<pre><code class="language-text">% 用 | 分割就可以得到带竖线的表格
+\begin{tabular}{|l|c|c|c|r|}<br/>
+    姓名 &amp; 语文 &amp; 数学 &amp; 外语 &amp; 备注 \\<br/>
+    李四 &amp; 87 &amp; 100 &amp; 93 &amp; 优秀 \\<br/>
+    张三 &amp; 87 &amp; 100 &amp; 33 &amp; 补考 \\<br/>
+    网二 &amp; 66 &amp; 70 &amp; 63 &amp; 一般 \\<br/>
+\end{tabular}
+</code></pre>
+<p><img src="media/16029107741366/16029207048750.jpg" alt=""/></p>
+<pre><code class="language-text">% 多条竖线表示多竖线表格
+\begin{tabular}{||l|c|c|c|r||}<br/>
+    姓名 &amp; 语文 &amp; 数学 &amp; 外语 &amp; 备注 \\<br/>
+    李四 &amp; 87 &amp; 100 &amp; 93 &amp; 优秀 \\<br/>
+    张三 &amp; 87 &amp; 100 &amp; 33 &amp; 补考 \\<br/>
+    网二 &amp; 66 &amp; 70 &amp; 63 &amp; 一般 \\<br/>
+\end{tabular}
+</code></pre>
+<p><img src="media/16029107741366/16029207807242.jpg" alt=""/></p></li>
+<li><p>横线表格</p>
+<pre><code class="language-text">% 通过 \hline 来添加横线
+\begin{tabular}{||l|c|c|c|r||}<br/>
+    \hline<br/>
+    姓名 &amp; 语文 &amp; 数学 &amp; 外语 &amp; 备注 \\<br/>
+    \hline<br/>
+    \hline<br/>
+    李四 &amp; 87 &amp; 100 &amp; 93 &amp; 优秀 \\<br/>
+    \hline<br/>
+    张三 &amp; 87 &amp; 100 &amp; 33 &amp; 补考 \\<br/>
+    \hline<br/>
+    网二 &amp; 66 &amp; 70 &amp; 63 &amp; 一般 \\<br/>
+    \hline<br/>
+\end{tabular}
+</code></pre>
+<p><img src="media/16029107741366/16029208882044.jpg" alt=""/></p></li>
+<li><p>指定宽度表格</p>
+<pre><code class="language-text">% 通过p{宽度}来指定表格宽度 超过宽度就会换行
+\begin{tabular}{||l|c|c|c|p{1.5cm}||}<br/>
+    \hline<br/>
+    姓名 &amp; 语文 &amp; 数学 &amp; 外语 &amp; 备注 \\<br/>
+    \hline<br/>
+    \hline<br/>
+    李四 &amp; 87 &amp; 100 &amp; 93 &amp; 超级超级优秀 \\<br/>
+    \hline<br/>
+    张三 &amp; 87 &amp; 100 &amp; 33 &amp; 补考 \\<br/>
+    \hline<br/>
+    网二 &amp; 66 &amp; 70 &amp; 63 &amp; 一般 \\<br/>
+    \hline<br/>
+\end{tabular}
+</code></pre>
+<p><img src="media/16029107741366/16029210539361.jpg" alt=""/></p></li>
+<li><p>一些特殊的表格格式可以使用对应的宏包来处理</p>
+<pre><code class="language-text">% 其宏包文档命令
+% 三线表<br/>
+texdoc booktab<br/>
+% 跨越长表格<br/>
+texdoc longtab<br/>
+% 综合表格宏包<br/>
+texdoc tabu
+</code></pre></li>
+</ul></li>
+<li><p>浮动体<br/>
+浮动就是脱离文档流，可以理解成漂浮在文档之上</p>
+<ul>
+<li><p><code>figure</code> 浮动体 （同下）</p>
+<pre><code class="language-text">\begin{figure}
+\end{figure}
+</code></pre></li>
+<li><p><code>table</code> 浮动体</p>
+<pre><code class="language-text">\begin{table}
+\end{table}
+</code></pre>
+<ul>
+<li><p>居中</p>
+<pre><code class="language-text">\begin{table}
+    \centering<br/>
+    \begin{tabular}{|l|c|c|c|r|}<br/>
+        \hline<br/>
+        姓名 &amp; 语文 &amp; 数学 &amp; 外语 &amp; 备注 \\<br/>
+        \hline<br/>
+        \hline<br/>
+        张三 &amp; 87 &amp; 100 &amp; 33 &amp; 补考 \\<br/>
+        \hline<br/>
+        网二 &amp; 66 &amp; 70 &amp; 63 &amp; 一般 \\<br/>
+        \hline<br/>
+    \end{tabular}<br/>
+\end{table}
+</code></pre></li>
+<li><p>编号</p>
+<pre><code class="language-text">\begin{table}
+    \centering<br/>
+    \begin{tabular}{|l|c|c|c|r|}<br/>
+        \hline<br/>
+        姓名 &amp; 语文 &amp; 数学 &amp; 外语 &amp; 备注 \\<br/>
+        \hline<br/>
+        \hline<br/>
+        张三 &amp; 87 &amp; 100 &amp; 33 &amp; 补考 \\<br/>
+        \hline<br/>
+        网二 &amp; 66 &amp; 70 &amp; 63 &amp; 一般 \\<br/>
+        \hline<br/>
+    \end{tabular}<br/>
+    \caption{表格}<br/>
+\end{table}
+</code></pre>
+<p><img src="media/16029107741366/16029221202752.jpg" alt=""/></p></li>
+<li><p>标签</p>
+<pre><code class="language-text">引用表 \ref{table-1}
+\begin{table}<br/>
+    \centering<br/>
+    \begin{tabular}{|l|c|c|c|r|}<br/>
+        \hline<br/>
+        姓名 &amp; 语文 &amp; 数学 &amp; 外语 &amp; 备注 \\<br/>
+        \hline<br/>
+        \hline<br/>
+        张三 &amp; 87 &amp; 100 &amp; 33 &amp; 补考 \\<br/>
+        \hline<br/>
+        网二 &amp; 66 &amp; 70 &amp; 63 &amp; 一般 \\<br/>
+        \hline<br/>
+    \end{tabular}<br/>
+    \caption{表格} \label{table-1}<br/>
+\end{table}
+</code></pre>
+<p><img src="media/16029107741366/16029223117929.jpg" alt=""/></p></li>
+<li><p>位置</p>
+<pre><code class="language-text">% &lt;允许位置&gt;参数默认（tbp）
+% h 此处 （here）代码所在文字<br/>
+% t 页顶 （top）代码所在页面或之后页面的顶部<br/>
+% b 页低 （bottom） 代码所在页面或之后页面的底部<br/>
+% p 独立一页 （page）浮动页面
+</code></pre>
+<pre><code class="language-text">% 引用表命令 \ref{lable名}
+引用表 \ref{table-1}<br/>
+% htbp 代表所有位置都可以<br/>
+\begin{table}[htbp]<br/>
+    \centering<br/>
+    \begin{tabular}{|l|c|c|c|r|}<br/>
+        \hline<br/>
+        姓名 &amp; 语文 &amp; 数学 &amp; 外语 &amp; 备注 \\<br/>
+        \hline<br/>
+        \hline<br/>
+        张三 &amp; 87 &amp; 100 &amp; 33 &amp; 补考 \\<br/>
+        \hline<br/>
+        网二 &amp; 66 &amp; 70 &amp; 63 &amp; 一般 \\<br/>
+        \hline<br/>
+    \end{tabular}<br/>
+    \caption{表格} \label{table-1}<br/>
+\end{table}
+</code></pre>
+<p><img src="media/16029107741366/16029223873600.jpg" alt=""/></p></li>
+</ul></li>
+</ul></li>
+<li><p>数学公式</p>
+<ul>
+<li><p>上下标</p>
+<ul>
+<li><p>上标</p>
+<pre><code class="language-text">\begin{document}
+    $3x^{20} + 5 = 0$<br/>
+\end{document}
+</code></pre>
+<p><img src="media/16029107741366/16029234258589.jpg" alt=""/></p></li>
+<li><p>下标</p>
+<pre><code class="language-text">\begin{document}
+    $3x_{20} + 5 = 0$<br/>
+\end{document}
+</code></pre>
+<p><img src="media/16029107741366/16029234475816.jpg" alt=""/></p></li>
+</ul></li>
+<li><p>希腊字母</p>
+<pre><code class="language-text">\begin{document}
+    $\aleph$<br/>
+    $\beta$<br/>
+    $\gamma$<br/>
+    $\epsilon$<br/>
+    $\pi$<br/>
+    $\omega$<br/>
+    $\Gamma$<br/>
+    $\Delta$<br/>
+    $\Theta$<br/>
+    $\Pi$<br/>
+    $\Omega$<br/>
+\end{document}
+</code></pre>
+<p><img src="media/16029107741366/16029236324944.jpg" alt=""/></p></li>
+<li><p>数学函数</p>
+<pre><code class="language-text">\begin{document}
+    $\log$<br/>
+    $\sin$<br/>
+    $\cos$<br/>
+    $\arccos$<br/>
+    $\arcsin$<br/>
+    $\ln$<br/>
+    $\sin^2x + \cos^2x = 1$<br/>
+\end{document}
+</code></pre>
+<p><img src="media/16029107741366/16029237606422.jpg" alt=""/></p></li>
+<li><p>分式</p>
+<pre><code class="language-text">$\frac{x}{x^2+x-1}$
+$\frac{\sqrt{x^2+2}}{10}$
+</code></pre>
+<p><img src="media/16029107741366/16029239274182.jpg" alt=""/></p></li>
+</ul></li>
+<li><p>矩阵</p>
+<ul>
+<li><p>引入宏包</p>
+<pre><code class="language-text">\usepackage{amsmath}
+</code></pre></li>
+<li><p>不同矩阵</p>
+<ul>
+<li><p>不带任何线</p>
+<pre><code class="language-text">\[
+    \begin{matrix}<br/>
+        0 &amp; 1 \\<br/>
+        2 &amp; 3<br/>
+    \end{matrix}  <br/>
+\]
+</code></pre>
+<p><img src="media/16029107741366/16029251127893.jpg" alt=""/></p></li>
+<li><p>带线的</p>
+<pre><code class="language-text">\dots : 横
+\vdots : 竖<br/>
+\ddots : 右斜
+</code></pre>
+<pre><code class="language-text">\[
+    % 小括号<br/>
+    \begin{pmatrix}<br/>
+        0 &amp; 1 \\<br/>
+        2 &amp; 3<br/>
+    \end{pmatrix} \qquad<br/>
+    % 中括号<br/>
+    \begin{bmatrix}<br/>
+        0 &amp; 1 \\<br/>
+        2 &amp; 3<br/>
+    \end{bmatrix} \qquad<br/>
+    % 大括号<br/>
+    \begin{Bmatrix}<br/>
+        0 &amp; 1 \\<br/>
+        2 &amp; 3<br/>
+    \end{Bmatrix} \qquad<br/>
+    % 一条竖线<br/>
+    \begin{vmatrix}<br/>
+        0 &amp; 1 \\<br/>
+        2 &amp; 3<br/>
+    \end{vmatrix} \qquad<br/>
+    % 两条竖线<br/>
+    \begin{Vmatrix} <br/>
+        0 &amp; 1 \\<br/>
+        2 &amp; 3<br/>
+    \end{Vmatrix}  <br/>
+\]
+</code></pre>
+<p><img src="media/16029107741366/16029254463001.jpg" alt=""/></p></li>
+</ul></li>
+<li><p>省略号</p>
+<pre><code class="language-text">\[
+    A = \begin{bmatrix}<br/>
+        a_{11} &amp; \dots &amp; a_{1n} \\<br/>
+        &amp; \ddots &amp; \vdots \\<br/>
+        a_{n1} &amp;&amp; \dots &amp; a_{nn}<br/>
+    \end{bmatrix}_{n \times n}<br/>
+\]
+</code></pre>
+<p><img src="media/16029107741366/16029257771065.jpg" alt=""/></p></li>
+</ul></li>
+<li><p>自定义命令</p>
+<ul>
+<li><p>新定义命令</p>
+<pre><code class="language-text">% \newcommand-定义命令
+% 命令只能由字母组成不能以 \end 开头<br/>
+% \newcommand&lt;命令&gt;[&lt;参数个数&gt;][&lt;首参数默认值&gt;]{{具体定义}}
+</code></pre>
+<pre><code class="language-text">\newcommand\PRC{People&#39;s Republic \emph{China}}
+\begin{document}<br/>
+    \PRC<br/>
+\end{document}
+</code></pre>
+<p><img src="media/16029107741366/16029275080913.jpg" alt=""/></p>
+<pre><code class="language-text">\newcommand\loves[2]{#1 喜欢 #2！}
+\begin{document}<br/>
+    \loves{猫儿}{鱼}<br/>
+\end{document}
+</code></pre>
+<p><img src="media/16029107741366/16029276519486.jpg" alt=""/></p>
+<pre><code class="language-text">\newcommand\loves[3][喜欢]{#2#1#3！}
+\begin{document}<br/>
+    \loves{猫儿}{鱼}<br/>
+    \loves[最爱]{猫儿}{鱼}<br/>
+\end{document}
+</code></pre>
+<p><img src="media/16029107741366/16029277656519.jpg" alt=""/>      </p></li>
+<li><p>重新定义命令</p>
+<pre><code class="language-text">% \renewcommand-重定义命令
+% 与 \newcommand 命令作用和用法相同，但是只能用于已有的命令<br/>
+% \renewcommand&lt;命令&gt;[&lt;参数个数&gt;][&lt;首参数默认值&gt;]{{具体定义}}
+</code></pre></li>
+<li><p>定义和重定义环境</p>
+<pre><code class="language-text">\newenvironment{&lt;环境名称&gt;}[&lt;参数个数&gt;][&lt;首参数默认值&gt;]{&lt;环境前定义&gt;}{&lt;环境后定义&gt;}
+\renewenvironment{&lt;环境名称&gt;}[&lt;参数个数&gt;][&lt;首参数默认值&gt;]{&lt;环境前定义&gt;}{&lt;环境后定义&gt;}
+</code></pre>
+<pre><code class="language-text">\newenvironment{myabstract}[1][摘要]{
+    \small<br/>
+    \begin{center}<br/>
+        \bfseries #1<br/>
+    \end{center}<br/>
+    \begin{quotation}<br/>
+}{<br/>
+    \end{quotation}<br/>
+}<br/>
+\begin{document}<br/>
+    \begin{myabstract}<br/>
+        这是一段自定义格式的摘要<br/>
+    \end{myabstract}<br/>
+    \begin{myabstract}[我的摘要]<br/>
+        这是一段自定义格式的摘要<br/>
+    \end{myabstract}<br/>
+\end{document}
+</code></pre>
+<p><img src="media/16029107741366/16029307461951.jpg" alt=""/></p></li>
+</ul></li>
+<li><p>一些常用命令</p>
+<pre><code class="language-text">\par % 产生新段落
+% 插入空行也可以产生新段落<br/>
+\\ % 换行不产生新段落<br/>
+\text{} 在公式在使用 可以显示中文
+</code></pre></li>
+</ol>
+
+                  </article>
+                  <div class="comments-wrap">
+                    <div class="share-comments">
+                      
+
+                      
+
+                      
+                    </div>
+                  </div><!-- end comments wrap -->
+              </div>
+            </div><!-- end columns -->
+      </div><!-- end container -->
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+              Copyright &copy; 2019
+              Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+              Theme used <a target="_blank" href="https://bulma.io/">Bulma CSS</a>.
+          </p>
+        </div>
+      </footer>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="asset/prism.js"></script>
+
+
+
+  
+    
+
+
+
+
+  </body>
+</html>
