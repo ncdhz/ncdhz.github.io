@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       
-    配置 Jupyter 远程访问 - NCDHZ
+    Centos 新建用户并授权 - NCDHZ
     
     </title>
     
@@ -85,7 +85,7 @@
                   <div class="post-body single-content">
                     
                     <h1 class="title">
-                            配置 Jupyter 远程访问   
+                            Centos 新建用户并授权   
                       </h1>
                      
                     
@@ -102,12 +102,12 @@
                             <div class="media-content">
                               <div class="content">
                                 <p>
-                                 <span class="date">2020/10/27</span>
+                                 <span class="date">2021/01/16</span>
                                   <span class="tran-posted-in">posted in</span>&nbsp; 
                                   
-                                      <span class="posted-in"><a href='Python.html'>Python</a></span>
+                                      <span class="posted-in"><a href='Centos.html'>Centos</a></span>
                                   
-                                      <span class="posted-in"><a href='%E7%BC%96%E8%BE%91%E5%99%A8.html'>编辑器</a></span>
+                                      <span class="posted-in"><a href='Linux.html'>Linux</a></span>
                                          
                                   
 
@@ -116,7 +116,7 @@
                                   <br />
                                   <span class="tran-tags">Tags:</span>&nbsp;
                                   
-                                    <a class="tag is-link is-light" href='tag_Python.html'>#Python</a>
+                                    <a class="tag is-link is-light" href='tag_Linux.html'>#Linux</a>
                                      
 
                                 </p>
@@ -126,36 +126,40 @@
                     </div>
                 </div>
                   <article class="markdown-body single-content">
-                    <ol>
-<li><p>生成密码</p>
-<pre><code class="language-python"># 在命令行中输入 python
-# 接着输入如下命令 <br/>
-from notebook.auth import passwd<br/>
-passwd()<br/>
-# 这里会要你输入密码<br/>
-# 接下来你会得到一个字符串（就是加密好的密码）
+                    <h3 id="toc_0">创建新用户</h3>
+
+<ol>
+<li><p>创建新用户 <code>n</code></p>
+<pre><code class="language-text"># adduser 用户名
+adduser n
 </code></pre></li>
-<li><p>生成配置文件</p>
-<pre><code class="language-text">jupyter notebook --generate-config
+<li><p>为 <code>n</code> 初始化密码</p>
+<pre><code class="language-text">passwd n
 </code></pre></li>
-<li><p>修改配置文件</p>
-<pre><code class="language-text"># 进入配置文件
-vi ~/.jupyter/jupyter_notebook_config.py<br/>
-# 做下面的修改<br/>
-c.NotebookApp.allow_remote_access = True<br/>
-c.NotebookApp.open_browser = False<br/>
-c.NotebookApp.ip=&#39;*&#39;<br/>
-c.NotebookApp.password = &#39;刚才生成的密码&#39;
+</ol>
+
+<h3 id="toc_1">授权</h3>
+
+<p>由于新用户不能使用 <code>sudo</code> 所以需要给他授权</p>
+
+<ol>
+<li><p>查看 <code>sudoers</code> 文件权限</p>
+<pre><code class="language-text">ls -l /etc/sudoers
 </code></pre></li>
-<li><p>配置工作目录 （不是必须）</p>
-<pre><code class="language-text">c.NotebookApp.notebook_dir=&#39;你工作文件夹目录&#39;
+<li><p>修改 <code>sudoers</code> 权限</p>
+<pre><code class="language-text"># 如果查看的权限如下，就需要修改权限
+# -r--r----- 1 root root 3938 Sep  6  2017 /etc/sudoers 只读权限<br/>
+# 添加写权限<br/>
+chmod -v u+w /etc/sudoers
 </code></pre></li>
-<li><p>启动 <code>jupyter</code> </p>
-<pre><code class="language-text">jupyter notebook
-</code></pre>
-<pre><code class="language-text"># 后台启动
-nohup jupyter notebook --allow-root &gt; jupyter.log 2&gt;&amp;1 &amp;<br/>
-# jupyter.log 这个是启动日志存储文件（你可以找一个合适的地方启动 jupyter）
+<li><p>修改 <code>sudoers</code> 文件</p>
+<pre><code class="language-text">## Allow root to run any commands anywhere 
+root ALL=(ALL) ALL<br/>
+# 这是新添加的<br/>
+n    ALL=(ALL) ALL
+</code></pre></li>
+<li><p>收回权限</p>
+<pre><code class="language-text">chmod -v u-w /etc/sudoers
 </code></pre></li>
 </ol>
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       
-    配置 Jupyter 远程访问 - NCDHZ
+    pip 豆瓣源 - NCDHZ
     
     </title>
     
@@ -85,7 +85,7 @@
                   <div class="post-body single-content">
                     
                     <h1 class="title">
-                            配置 Jupyter 远程访问   
+                            pip 豆瓣源   
                       </h1>
                      
                     
@@ -102,12 +102,10 @@
                             <div class="media-content">
                               <div class="content">
                                 <p>
-                                 <span class="date">2020/10/27</span>
+                                 <span class="date">2021/01/22</span>
                                   <span class="tran-posted-in">posted in</span>&nbsp; 
                                   
                                       <span class="posted-in"><a href='Python.html'>Python</a></span>
-                                  
-                                      <span class="posted-in"><a href='%E7%BC%96%E8%BE%91%E5%99%A8.html'>编辑器</a></span>
                                          
                                   
 
@@ -127,35 +125,8 @@
                 </div>
                   <article class="markdown-body single-content">
                     <ol>
-<li><p>生成密码</p>
-<pre><code class="language-python"># 在命令行中输入 python
-# 接着输入如下命令 <br/>
-from notebook.auth import passwd<br/>
-passwd()<br/>
-# 这里会要你输入密码<br/>
-# 接下来你会得到一个字符串（就是加密好的密码）
-</code></pre></li>
-<li><p>生成配置文件</p>
-<pre><code class="language-text">jupyter notebook --generate-config
-</code></pre></li>
-<li><p>修改配置文件</p>
-<pre><code class="language-text"># 进入配置文件
-vi ~/.jupyter/jupyter_notebook_config.py<br/>
-# 做下面的修改<br/>
-c.NotebookApp.allow_remote_access = True<br/>
-c.NotebookApp.open_browser = False<br/>
-c.NotebookApp.ip=&#39;*&#39;<br/>
-c.NotebookApp.password = &#39;刚才生成的密码&#39;
-</code></pre></li>
-<li><p>配置工作目录 （不是必须）</p>
-<pre><code class="language-text">c.NotebookApp.notebook_dir=&#39;你工作文件夹目录&#39;
-</code></pre></li>
-<li><p>启动 <code>jupyter</code> </p>
-<pre><code class="language-text">jupyter notebook
-</code></pre>
-<pre><code class="language-text"># 后台启动
-nohup jupyter notebook --allow-root &gt; jupyter.log 2&gt;&amp;1 &amp;<br/>
-# jupyter.log 这个是启动日志存储文件（你可以找一个合适的地方启动 jupyter）
+<li><p>一招解决超时问题</p>
+<pre><code class="language-text">pip --default-timeout=100 install -r ./requirements.txt -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com 
 </code></pre></li>
 </ol>
 
