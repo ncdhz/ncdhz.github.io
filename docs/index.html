@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>NCDHZ</title>
@@ -8,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://ncdhz.github.io/jsdelivr/docsify@4/lib/themes/vue.css">
 </head>
+
 <body>
   <div id="app"></div>
   <script>
@@ -21,13 +23,17 @@
         '/.*/_navbar.md': '/_navbar.md'
       },
       search: {
-      	placeholder: 'Search',
-      	noData: 'No Results!',
+        placeholder: 'Search',
+        noData: 'No Results!',
         paths: 'auto',
         depth: 6
       },
       loadNavbar: true,
-      coverpage: true
+      coverpage: true,
+      latex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']],
+      }
     }
   </script>
   <!-- Docsify v4 -->
@@ -42,6 +48,9 @@
   <script src="https://ncdhz.github.io/jsdelivr/prismjs@1/components/prism-javascript.min.js"></script>
   <script src="https://ncdhz.github.io/jsdelivr/prismjs@1/components/prism-typescript.min.js"></script>
   <script src="https://ncdhz.github.io/jsdelivr/prismjs@1/components/prism-latex.min.js"></script>
-  
+
+  <script src="https://ncdhz.github.io/jsdelivr/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://ncdhz.github.io/jsdelivr/docsify/lib/plugins/docsify-latex.min.js"></script>
 </body>
+
 </html>
